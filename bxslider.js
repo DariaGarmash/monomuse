@@ -598,13 +598,13 @@
                     linkContent = slider.settings.buildPager(i);
                     slider.pagerEl.addClass('bx-custom-pager');
                 }
-//                else{
-//                    linkContent = i + 1;
-//                    slider.pagerEl.addClass('bx-default-pager');
-//                }
-//                // var linkContent = slider.settings.buildPager && $.isFunction(slider.settings.buildPager) ? slider.settings.buildPager(i) : i + 1;
-//                // add the markup to the string
-//                pagerHtml += '<div class="bx-pager-item"><a href="" data-slide-index="' + i + '" class="bx-pager-link">' + linkContent + '</a></div>';
+                else{
+                    linkContent = i + 1;
+                    slider.pagerEl.addClass('bx-default-pager');
+                }
+                // var linkContent = slider.settings.buildPager && $.isFunction(slider.settings.buildPager) ? slider.settings.buildPager(i) : i + 1;
+                // add the markup to the string
+                pagerHtml += '<div class="bx-pager-item"><a href="" data-slide-index="' + i + '" class="bx-pager-link">'+ '</a></div>';
             };
             // populate the pager element with pager links
             slider.pagerEl.html(pagerHtml);

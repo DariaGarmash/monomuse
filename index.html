@@ -11,66 +11,67 @@
 <body>
     <div class="container-back clearfix">
         <header id="header">
-            <div class="header-holder">
-                <div class="contact align_left">
-                    <span class="phone">111-01020301</span>
-                    <span class="mail">info@monomuse.com</span>
-                </div>
-                <div class="login align_right">
-                    <a href="#">login</a>
+            <div class="wrapper">
+                <div class="header-holder">
+                    <div class="contact align_left">
+                        <span class="phone">111-01020301</span>
+                        <span class="mail">info@monomuse.com</span>
+                    </div>
+                    <div class="login align_right">
+                        <a href="#">login</a>
+                    </div>
                 </div>
             </div>
         </header>
         <main id="main">
-            <div class="nav-bar clearfix">
-                <strong class="logo">
-                    <a href="#">MONOMUSE</a>
-                </strong>
-                <div class="main-nav align_right">
-                    <ul class="head-menu">
-                        <li>
-                            <a href="#">Home</a>
-                            <ul class="drop-down">
-                                <li><a href="#">Menu item 1</a></li>
-                                <li><a href="#">Menu item 2</a></li>
-                                <li><a href="#">Menu item 3</a></li>
-                                <li><a href="#">Menu item 4</a></li>
-                                <li><a href="#">Menu item 5</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="wrapper">
+                <div class="nav-bar clearfix">
+                    <strong class="logo">
+                        <a href="#">MONOMUSE</a>
+                    </strong>
+                    <div class="main-nav align_right">
+                        <ul class="head-menu">
+                            <li>
+                                <a href="#">Home</a>
+                                <ul class="drop-down">
+                                    <li><a href="#">Menu item 1</a></li>
+                                    <li><a href="#">Menu item 2</a></li>
+                                    <li><a href="#">Menu item 3</a></li>
+                                    <li><a href="#">Menu item 4</a></li>
+                                    <li><a href="#">Menu item 5</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
 
-            </div>
-            <div class="gallery-holder">
-                <div class="gallery">
-                    <img src="images/img_gallery.jpg" alt=""/>
-                    <img src="images/img_gallery1.jpg" alt=""/>
                 </div>
-                <a href="#" class="arrow_left"></a>
-                <a href="#" class="arrow_right"></a>
-                <span class="shadow_left"></span>
-                <span class="shadow_right"></span>
-                <ul class="dots-row">
-                    <li class="active"><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+                <div class="gallery-holder">
+                    <div class="gallery">
+                        <img src="images/img_gallery.jpg" alt=""/>
+                        <img src="images/img_gallery1.jpg" alt=""/>
+                    </div>
+                    <a href="#" class="arrow_left"></a>
+                    <a href="#" class="arrow_right"></a>
+                    <span class="shadow_left"></span>
+                    <span class="shadow_right"></span>
+                </div>
             </div>
+
 
             <div class="wrapper clearfix">
                 <section class="main-header clearfix">
@@ -186,6 +187,7 @@
     </div>
 
     <footer id="footer">
+        <div class="wrapper">
             <div class="box bottom clearfix">
                 <div class="col social-links">
                     <div class="title">
@@ -238,16 +240,14 @@
                 <div class="box"><span>&copy2011 Monomuse by Freeform</span></div>
             </div>
             <div class="btn-bottom"></div>
+        </div>
+
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="bxslider.js"></script>
     <script type="text/javascript">
         $(function(){
             $('.gallery').bxSlider();
-            $('.dots-row li').on('click', function(){
-                $('.dots-row li').removeClass('active');
-                $(this).addClass('active');
-            });
         });
     </script>
 </body>

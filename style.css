@@ -34,7 +34,8 @@ h4{
     font: 14px/17px Verdana, Verdana, Geneva, sans-serif;
     margin: 0 0 15px 0;
 }
-#main {
+
+.wrapper {
     max-width: 1000px;
     position: relative;
     margin: 0 auto;
@@ -209,37 +210,35 @@ h4{
     background: url('images/shadow_left.png');
     height: 136px;
 }
-
-.dots-row {
+.bx-pager{
     float: right;
     position: absolute;
     z-index: 2;
     right: 29px;
     bottom: 18px;
 }
-.dots-row a:hover,
-.dots-row li.active a {
-    background: #b0c0c9;
-}
-.dots-row > li{
+.bx-pager .bx-pager-item{
     float: left;
+    margin: 0 0 5px 0;
 }
-.dots-row > li > a {
+.bx-pager-link{
     display: block;
     width: 9px;
     height: 9px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    border-radius: 3px; /* border radius */
-    background-color: #fff; /* layer fill content + color overlay */
-    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3); /* drop shadow */
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3); /* drop shadow */
+    border-radius: 3px;
+    background-color: #fff;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
     margin: 0 6px 0 0;
     padding: 2px;
     box-sizing: border-box;
     border: 2px solid #fdfdfe;
 }
-
+.bx-pager-link.active{
+    background: #b0c0c9;
+}
 article header {
     position: relative;
     font-weight: normal;
